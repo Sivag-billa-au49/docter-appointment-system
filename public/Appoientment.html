@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Appoientment.css">
+    <script src="./Appointment.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/profile">Profile</a>
+        <a href="/homepage">Home</a>
+    </nav>
+    
+    <div class="w-50 mx-auto">
+        <form  id="form" class="my-5 border rounded needs-validation" novalidate>
+            <div class="d-flex p-2 bd-highlight" id="head"><h2>Enter Appointment Details</h2></div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Name" >
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Mobile Number</label>
+                <input type="text" name="phone" class="form-control" placeholder="Mobile no"  >
+              </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" name="age" class="form-control" placeholder="Age">
+              </div>
+              <legend>Choose your gender:</legend>
+              <div class="gender">
+              <input type="radio" name="gender" id="male" value="male" >
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="others" value="others">
+              <label for="others">Others</label>
+              </div>
+              <div class="mb-3">
+                <label for="specialization" class="form-label">specialization</label>
+                <select name="specialization" id="specialization">
+                  <option value="nurologist">Select Dept</option>
+                  <option value="nurologist">General Surgeon</option>
+                  <option value="dentist">Gastroenterologist</option>
+                  <option value="dentist">Neurologist</option>
+                  <option value="dentist">cardiologist</option>
+                  <option value="dentist">Dentist</option>
+                  <option value="dentist">Orthopedic</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="Date of birth" class="form-label">Date of Appoientment</label>
+                <input type="date" name="date" class="form-control" placeholder="Date">
+              </div>
+              <div>
+                <label for="Date of birth" class="form-label">Time</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div>
+                <label for="Date of birth" class="form-label">Syntomos</label>
+            </div>
+            <div>
+                <textarea name="text" id="" cols="88" rows="05"></textarea>
+            </div>
+            <button>Book</button>
+           
+        </form> 
+    </div>
+</body>
+</html>

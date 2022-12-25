@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(179, 248, 248);
+    background-image: url(./Project-images/sign.jpg);
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+      
+}
+.form-label{
+    padding-left: 10px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(1, 1, 66);
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 43%;
+   color: aqua;
+}
+button{
+background-color: aqua;
+border-radius: 10px;
+border: none;
+width: 100px;
+height: 45px;
+font-weight: 400;
+text-align: center;
+margin-left: 45%;
+font-size: medium;
+margin-bottom: 10px;
+   
+}
+#form{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
