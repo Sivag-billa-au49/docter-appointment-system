@@ -87,6 +87,6 @@ app.get("/api/profile", async (req, res) => {
   res.json(await getUser(req.email));
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log("server started");
 });
