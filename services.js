@@ -2,6 +2,7 @@ const userModel = require("./UserModel");
 
 async function getUser(email) {
   const user = await userModel.findOne({ email });
+  console.log(user)
   if (user) {
     return user;
   }

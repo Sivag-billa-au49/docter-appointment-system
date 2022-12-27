@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded());
 app.use(cookieParser());
 
-app.get("/Homepage", (req, res) => {
+app.get("/", (req, res) => {
   if (req.cookies.jwt) {
     res.clearCookie("jwt");
   }
@@ -50,13 +50,13 @@ app.post("/login", async (req, res) => {
 
 app.post("/signup", async (req, res) => {
   console.log(req.body);
-  const { fname, lname, email, password, phone } = req.body;
+  const { fname, lname, email, password, phone, age } = req.body;
  
   if (await getUser(email)) {
     res.status(400).json({ msg: "User already exists" });
   } else {
     const name = fname + " " + lname;
-    await postUser({ email, password, name, phone });
+    await postUser({ email, password, name, phone, age });
     const token = jwt.sign({ email: req.body.email }, "siva");
     res.cookie("jwt", token);
     res.json({ msg: "successful" });

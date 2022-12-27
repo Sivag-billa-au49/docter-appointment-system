@@ -9,6 +9,7 @@ formEle.addEventListener("submit",async(e)=>{
     })
     if(responce.status == 200){
         location.replace("/dashboard");
+        
     }
     else{
         const resData = await responce.json();

@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
   },
   name: String,
   phone: String,
+  age: String,
   appointments: [
     {
       name: String,
